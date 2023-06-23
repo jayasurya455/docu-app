@@ -1,0 +1,8 @@
+<app-search-bar></app-search-bar>
+<div class="cards-container">
+    <ng-container *ngFor="let card of cardsList | searchDocument : searchText" >
+        <div>
+            <app-document-card [cardDetail]="card"></app-document-card>
+        </div>
+    </ng-container>
+</div>

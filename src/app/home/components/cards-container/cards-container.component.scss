@@ -1,0 +1,7 @@
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    max-height: calc(100vh - 300px);
+    overflow-y: auto;
+}

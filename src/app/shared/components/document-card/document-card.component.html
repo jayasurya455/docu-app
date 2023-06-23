@@ -1,0 +1,14 @@
+<div class="doc-conatiner">
+  <div
+    class="doc-type"
+    [ngClass]="{
+      'financial': cardDetail?.documentType?.typeId === '1',
+      'technical': cardDetail?.documentType?.typeId === '2',
+      'marketing': cardDetail?.documentType?.typeId === '3',
+      'human-resource': cardDetail?.documentType?.typeId === '4'
+    }"
+  >
+    {{ cardDetail?.documentType?.name }}
+  </div>
+  <div class="doc-name">{{ cardDetail?.name }}</div>
+</div>

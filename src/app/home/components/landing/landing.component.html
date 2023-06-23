@@ -1,0 +1,12 @@
+<h1>Cinema</h1>
+<h2>Search movie or select theater</h2>
+<div class="main-conatiner">
+  <div class="navigation-container">
+    <app-navigation-bar
+      (selectedType)="onActiveDocumentTypeChanged($event)"
+    ></app-navigation-bar>
+  </div>
+  <div class="search-card-conatiner">
+    <app-cards-container [selectedType]="selectedType"></app-cards-container>
+  </div>
+</div>

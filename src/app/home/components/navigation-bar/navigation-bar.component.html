@@ -1,0 +1,16 @@
+<div
+  class="document-type"
+  (click)="selectDocumentType(allType)"
+  [ngClass]="{ '-active': activeType === allType }"
+>
+  All
+</div>
+<ng-container *ngFor="let docuType of documentTypes; let i = index">
+  <div
+    class="document-type"
+    (click)="selectDocumentType(docuType)"
+    [ngClass]="{ '-active': activeType === docuType }"
+  >
+    {{ docuType.name }}
+  </div>
+</ng-container>
